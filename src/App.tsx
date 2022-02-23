@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Header'
+import Footer from './Footer'
+import AgeChart from './components/AgeChart'
+import ViewerChart from './components/ViewerChart'
+import MoneyChart from './components/MoneyChart'
+import CategoryChart from './components/CategoryChart'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <div className="top-container">
+        <ViewerChart />
+        <hr />
+        <MoneyChart />
+      </div>
+      <hr />
+      <div className="bottom-container">
+        <CategoryChart />
+        <hr />
+        <AgeChart />
+      </div>
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
