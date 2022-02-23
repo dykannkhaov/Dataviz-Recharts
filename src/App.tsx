@@ -9,15 +9,15 @@ function App() {
   return (
     <>
       <Header />
-      <div className="top-container">
+      <div className="flex justify-evenly container-responsive">
         <ViewerChart />
-        <hr />
+        <hr className="border-r border-gray-600 h-auto" />
         <MoneyChart />
       </div>
-      <hr />
-      <div className="bottom-container">
+      <hr className="border-gray-600" />
+      <div className="flex justify-evenly container-responsive">
         <CategoryChart />
-        <hr />
+        <hr className="border-r border-gray-600 h-auto" />
         <AgeChart />
       </div>
       <Footer />

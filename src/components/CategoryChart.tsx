@@ -14,8 +14,8 @@ const data: DataCategoryChart[] = [
 
 function CategoryChart() {
   return (
-    <div className="categoryPie-container">
-      <h3>Moyenne de spectateurs par catégorie (Février 2022 en cours)</h3>
+    <div className="pt-3 chart">
+      <h3 className="mb-4 text-center font-semibold">Moyenne de spectateurs par catégorie (Février 2022 en cours)</h3>
       <PieChart width={700} height={500} data={data}>
         <Pie data={data} dataKey="value" label labelLine={false} />
         <Tooltip />

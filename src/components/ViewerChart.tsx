@@ -16,8 +16,10 @@ const data: DataViewerChart[] = [
 
 function ViewerChart() {
   return (
-    <div className="viewerBar-container">
-      <h3>Évolution des spectateurs (Septembre 2021- Février 2022 en cours)</h3>
+    <div className="pt-3 chart">
+      <h3 className="mb-4 text-center font-semibold">
+        Évolution des spectateurs (Septembre 2021- Février 2022 en cours)
+      </h3>
       <BarChart width={700} height={400} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <YAxis dataKey="spectateurs" />
@@ -27,7 +29,8 @@ function ViewerChart() {
           fill="#9145ff"
           label={{
             position: 'top',
-            fill: '#36856A',
+            fill: 'green',
+            fontSize: '15px',
             fontWeight: 'bold',
           }}
         />

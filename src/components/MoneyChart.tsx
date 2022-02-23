@@ -17,18 +17,19 @@ const data: DataMoneyChart[] = [
 
 function MoneyChart() {
   return (
-    <div className="moneyArea-container">
-      <h3>Vos revenus mensuel (Septembre 2021- Février 2022 en cours)</h3>
+    <div className="pt-3 chart">
+      <h3 className="mb-4 text-center font-semibold">Vos revenus mensuel (Septembre 2021- Février 2022 en cours)</h3>
       <AreaChart width={700} height={400} data={data}>
         <YAxis dataKey="gain" ticks={[100, 200, 300, 400]} />
-        <XAxis dataKey="month" padding={{ right: 8 }} />
+        <XAxis dataKey="month" padding={{ right: 14 }} />
         <Area dot dataKey="gain" type="monotone" unit="€" fill="green">
           <LabelList
             dataKey="label"
             position="top"
             style={{
               fill: 'orange',
-              fontWeight: 'bold',
+              fontSize: '15px',
+              fontWeight: 600,
             }}
           />
         </Area>

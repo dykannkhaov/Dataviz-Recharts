@@ -27,8 +27,8 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 function AgeChart() {
   return (
-    <div className="agePie-container">
-      <h3>Tranche d'âge moyenne de vos spectateurs</h3>
+    <div className="pt-3">
+      <h3 className="mb-4 text-center font-semibold">Tranche d'âge moyenne de vos spectateurs</h3>
       <PieChart width={700} height={500}>
         <Pie data={data} dataKey="value" labelLine={false} label={renderCustomizedLabel} />
         <Tooltip />

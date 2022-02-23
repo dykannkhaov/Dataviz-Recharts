@@ -4,7 +4,7 @@ const style = { color: 'white', fontSize: '20px', marginLeft: '10px' }
 
 function Footer() {
   return (
-    <footer>
+    <footer className="flex justify-center bg-blue200 mt-4 p-2.5">
       <a href="https://www.twitch.tv/solivann78" target="_blank" rel="noreferrer">
         <BsTwitch style={style} />
       </a>
